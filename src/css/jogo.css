@@ -1,0 +1,153 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+  }
+  
+  .square {
+    background-color: teal;
+    border: 2px solid #5f9ea0;
+    float: left;
+    font-size: 55px;
+    line-height: 34px;
+    height: 150px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 150px;
+    color: yellow;
+    font-family: 'Grandstander', cursive;
+  }
+  .square:hover{
+    cursor: pointer;
+  }
+  .negrito{
+    font-weight: bold;
+  }
+
+  .vencedor{
+    color: yellow;
+    font-weight: bolder;
+    background-color: #20b2aa;
+  }
+  
+ 
+  
+
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .game {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .game-info {
+    margin-left: 20px;
+    min-width: 420px;
+  }
+  .proximo-jogador{
+    color: yellow;
+    font-size: 30px;
+    font-family: 'Grandstander', cursive;
+    letter-spacing: 3px;
+  }
+  .botao-jogada{
+    color: yellow;
+    font-family: 'Ranchers', cursive;
+    letter-spacing: 5px;
+    background-color: teal;
+    border: none;
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .botao-inicio-jogada{
+    color: yellow;
+    font-family: 'Ranchers', cursive;
+    letter-spacing: 5px;
+    background-color: teal;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .botao-jogada:hover, .botao-inicio-jogada:hover, .btn-troca:hover{
+    cursor: pointer;
+    background-color: #00808094;
+  }
+  .btn-troca{
+    transform: rotate(90deg);
+    color: yellow;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: teal;
+    padding: 10px;
+    margin-left: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  *:focus{
+    outline:none!important;
+  }
+  ul{
+    list-style-type: none;
+  }
+
+  .esconder{
+    display: none;
+  }
+  .container-resultado{
+    position: absolute;
+    border-radius: 20px;
+    padding: 10px;
+    width: 600px;
+    height: 400px;
+    background-color: yellow;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .conteudo-resultado{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .titulo-modal{
+    color: teal;
+    font-size: 35px;
+    font-family: 'Grandstander', cursive;
+    letter-spacing: 3px;
+  }
+  .corpo-modal{
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Grandstander', cursive;
+    letter-spacing: 3px;
+    color: teal;
+  }
